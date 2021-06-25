@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background-image: url(/docs/img/git-background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
