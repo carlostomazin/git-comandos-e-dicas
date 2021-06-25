@@ -4,7 +4,9 @@
 
 Este repositório tem o propósito de ajudar de uma forma simples com consultas de comandos do GIT e algumas dicas
 
+Para acessar os comandos entre no site que este repositório está hospedando, neste link:
 
+[Git comando e Dicas (carlostomazin.github.io)](https://carlostomazin.github.io/git-comandos-e-dicas/)
 
 Oque você verá de comandos nesse repositório:
 
