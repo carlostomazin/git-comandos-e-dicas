@@ -10,6 +10,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 1.6rem; 
+  color: white;
 }
 body:after {
   position: absolute;
@@ -23,7 +24,8 @@ body:after {
   z-index: -1;
   background: #000000;
   background: -webkit-linear-gradient(to right, #000000, #000000);
-  background: linear-gradient(to right, #4f26c0, #c967bc); }
+  background: linear-gradient(to right, #4f26c0, #c967bc); 
+}
 
 .boxed-page {
   margin: auto;
@@ -53,7 +55,8 @@ body:after {
 	padding: 5px; 
 	list-style-type: none; 
 	text-align: center; 
-	background-color: #000; 
+	background-color: #44475a;
+  border-radius: 5px;
 	} 
  
 #navbar ul li {  
@@ -64,22 +67,43 @@ body:after {
 	text-decoration: none; 
 	padding: .2em 1em; 
 	color: #fff; 
-	background-color: #000; 
+	background-color: #44475a;
+  border-radius: 5px;
+  
 	} 
  
 #navbar ul li a:hover { 
 	color: #000; 
-	background-color: #fff; 
+	background-color: #fff;
 	} 
 
 h1{
- 
   font-size: 4.8rem;
   font-weight: 300;
-  line-height: 1.2em; }
+  line-height: 1.2em; 
+  color: black
+}
+
+.gradient-text{
+  background: linear-gradient(to right, #4f26c0, #c967bc); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+code {
+  font-family: 'lucida console';
+  color: rgb(255, 255, 255);
+  background-color: #44475a;
+  padding: 10px;
+
+  font-size: 90%;
+  border-radius: 5px;
+}
 
 .jumbotron {
-  background-color: #fff;
+  background-color: #282a36;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -89,5 +113,6 @@ h1{
   border-top-right-radius: 5px;
   margin-bottom: 0;
   overflow: hidden;
-  min-height: 500px; 
+  min-height: 550px; 
+  padding: 5%;
 }
