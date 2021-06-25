@@ -38,14 +38,32 @@
                   
             </div>
         </div>
-        <!-- inico -->
+        <!-- inico padding: 18px;-->
         <div class="title">
             <h1><b>CONFIGURAÇÃO</b></h1>
         </div>
 
         <div class="jumbotron">
-            <h3 class="gradient-text"> Aqui vai os comandos</h3>
-            <code>$ git config --list</code>
+            <h3 class="gradient-text">Mostrar as configurações atuais:</h3>
+            <div class="sizecode"> <code>$ git config --list</code> </div>
+            
+            <h3 class="gradient-text">Mostrar as configurações globais:</h3>
+            <div class="sizecode"> <code>$ git config --global --list</code> </div>
+
+            <h3 class="gradient-text">Defininir o usuario padrão do git:</h3>
+            <div class="sizecode"> <code>$ git config --global user.name "email"</code> </div>
+            Dica: Usar o mesmo usuario do seu github ou gitlab.
+
+            <h3 class="gradient-text">Definindo o email padrão do git:</h3>
+            <div class="sizecode"> <code>$ git config --global user.email "email"</code> </div>
+            Dica: Usar o mesmo email do seu github.
+
+            <h3 class="gradient-text">Defininir o editor de texto padrão do git:</h3>
+            <div class="sizecode"> <code>$ git config --global core.editor "editor"</code> </div>
+            
+            <h3 class="gradient-text">Apaga uma determinada configuração:</h3>
+            <div class="sizecode"> <code>$ git config --global --unset &lttag&gt</code> </div>
+            Dica: No lugar da tag coloca oque quer mudar (EX: core.editor).
             
             
             

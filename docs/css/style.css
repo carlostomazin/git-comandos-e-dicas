@@ -90,14 +90,18 @@ h1{
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  margin-bottom: 1%;
 }
 
 code {
   font-family: 'lucida console';
   color: rgb(255, 255, 255);
-  background-color: #44475a;
-  padding: 18px;
   font-size: 90%;
+}
+
+.sizecode{
+  background-color: #44475a;
+  padding: 2%;
   border-radius: 5px;
 }
 
