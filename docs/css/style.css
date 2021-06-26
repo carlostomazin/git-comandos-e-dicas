@@ -116,6 +116,6 @@ code {
   border-top-right-radius: 5px;
   margin-bottom: 0;
   overflow: hidden;
-  min-height: 550px; 
+  min-height: auto; 
   padding: 5%;
 }

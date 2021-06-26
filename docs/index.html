@@ -41,7 +41,6 @@
         <div class="title">
             <h1 id="configuração"><b>CONFIGURAÇÃO</b></h1>
         </div>
-
         <div class="jumbotron">
             <h3 class="gradient-text">Mostrar as configurações atuais:</h3>
             <div class="sizecode"> <code>$ git config --list</code> </div>
@@ -62,18 +61,59 @@
             
             <h3 class="gradient-text">Apaga uma determinada configuração:</h3>
             <div class="sizecode"> <code>$ git config --global --unset &lttag&gt</code> </div>
-            Dica: No lugar da tag coloca oque quer mudar (EX: core.editor).
+            Dica: No lugar da &lttag&gt coloca oque quer mudar (EX: core.editor).
         </div>
-        <!-- fim -->
-        <!-- inico -->
+        
         <div class="title">
             <h1><b>CRIAR</b></h1>
         </div>
-
         <div class="jumbotron">
+            <h3 class="gradient-text">Clonar um repositório existente:</h3>
+            <div class="sizecode"> <code>$ git clone &ltlink&gt</code> </div>
+            Dica: No lugar do &ltlink&gt coloca o endereço HTTP ou SSH do repositório (EX: http://dominio.com/usuario/repo.git).
             
+            <h3 class="gradient-text">Criar um repositório local no diretório atual:</h3>
+            <div class="sizecode"> <code>$ git init</code> </div>
         </div>
-        <!-- fim -->
+
+        <div class="title">
+            <h1><b>MUDANÇAS LOCAIS</b></h1>
+        </div>
+        <div class="jumbotron">
+            <h3 class="gradient-text">Ver como está o estado dos arquivos:</h3>
+            <div class="sizecode"> <code>$ git status</code> </div>
+            Dica: Os estados dos arquivos pode ser: <br>
+                - Untracked: O repóstiorio não os reconhece. <br>
+                - Unmodifield/not modified: Arquivos não modificados/alterados. <br>
+                - Modified/index/not staged: Arquivos modificados mas não adicionados para commit.<br>
+                - Staged: Arquivos adicionados para commit (mas não foram commitados ainda).<br>
+                (Quando é dado um commit no arquivo ele volta para Unmodifield, e assim se repete o ciclo).
+
+            <h3 class="gradient-text">Adicionar/preparar as mudanças atuais ao próximo commit:</h3>
+            <div class="sizecode"> <code>$ git add &ltfile&gt</code> </div>
+            Dica: No lugar do &ltfile&gt coloca o nome do arquivo ou coloca um * (asterisco) ou . (ponto) que indicam todos os arquivos.
+            
+            <h3 class="gradient-text">Realizar um commit das mudanças anteriormente preparadas (staged):</h3>
+            <div class="sizecode"> <code>$ git commit -m "mensagem"</code> </div>
+            Dica: No lugar "mensagem" colocar de um forma bem resumida uma mensagem das alterções realizadas (até 50 caracteres o ideal).
+            
+            <h3 class="gradient-text">Realizar um commit pulando a área de preparação:</h3>
+            <div class="sizecode"> <code>$ git commit -am "mensagem"</code> </div>
+
+            <h3 class="gradient-text">Criar uma "caixa" (stash) para guardar as alterações feitas:</h3>
+            <div class="sizecode"> <code>$ git stash save "mensagem"</code> </div>
+
+            <h3 class="gradient-text">Mostra os stash:</h3>
+            <div class="sizecode"> <code>$ git stash list</code> </div>
+            Dica: Stash funciona como um arry(vetor/matriz) o primeiro adicionado fica na posição/index 0 o segundo 1 e assim sucessivamente.
+            <h3 class="gradient-text">Abre a "caixa" (stash) para trabalhar com as alterações dentro dela:</h3>
+            <div class="sizecode"> <code>$ git stash pop &ltindex&gt</code> </div>
+            Dica: No lugar da &ltindex&gt colocar a posição/index da stash.
+
+            <h3 class="gradient-text">Apaga todas as stash:</h3>
+            <div class="sizecode"> <code>$ git stash clear</code> </div>
+        </div>
+
     </div>
 
     
