@@ -26,10 +26,9 @@
                         <li><a href="#configuração" alt="">CONFIGURAÇÃO</a></li> 
                         <li><a href="#criar" alt="">CRIAR</a></li> 
                         <li><a href="#mudancas-locais" alt="">MUDANÇAS LOCAIS</a></li> 
-                        <li><a href="#pesquisa" alt="">PESQUISA</a></li> 
                         <li><a href="#historico-commits" alt="">HISTÓRICO DE COMMITS</a></li> 
                         <br><br>
-                        <li><a href="#branch-tags" alt="">RAMOS E TAGS</a></li> 
+                        <li><a href="#branches" alt="">BRANCHES</a></li> 
                         <li><a href="#atualizar-publicar" alt="">ATUALIZAR E PUBLICAR</a></li> 
                         <li><a href="#mesclar-reconstruir" alt="">MESCLAR E RECONSTRUIR</a></li> 
                         <li><a href="#desfazer" alt="">DESFAZER</a></li> 
@@ -83,7 +82,7 @@
             <h3 class="gradient-text">Ver como está o estado dos arquivos:</h3>
             <div class="sizecode"> <code>$ git status</code> </div>
             Dica: Os estados dos arquivos pode ser: <br>
-                - Untracked: O repóstiorio não os reconhece. <br>
+                - Untracked: O repositório não os reconhece. <br>
                 - Unmodifield/not modified: Arquivos não modificados/alterados. <br>
                 - Modified/index/not staged: Arquivos modificados mas não adicionados para commit.<br>
                 - Staged: Arquivos adicionados para commit (mas não foram commitados ainda).<br>
@@ -112,6 +111,66 @@
 
             <h3 class="gradient-text">Apaga todas as stash:</h3>
             <div class="sizecode"> <code>$ git stash clear</code> </div>
+        </div>
+
+        <div class="title" id="historico-commits">
+            <h1><b>HISTÓRICO DE COMMITS</b></h1>
+        </div>
+        <div class="jumbotron">
+            <h3 class="gradient-text">Mostrar todo o histórico de commits do repositório:</h3>
+            <div class="sizecode"> <code>$ git log</code> </div>
+            Dica: Mostrará o hash, informações do autor, data do commit e título do commit.
+
+            <h3 class="gradient-text">Mostrar todo o histórico de commits de uma pasta ou arquivo:</h3>
+            <div class="sizecode"> <code>$ git log &ltpasta ou arquivo&gt</code> </div>
+            Dica: No lugar da &ltpasta ou arquivo&gt colocar a pasta ou arquivo desejado.
+            
+            <h3 class="gradient-text">Mostrar todo o histórico de commits do repositório de uma forma resumida:</h3>
+            <div class="sizecode"> <code>$ git log --oneline</code> </div>
+            Dica: Mostrará apenas o hash do commit e a mensagem do commit.
+
+            <h3 class="gradient-text">Mostrar todo o histórico de commits do repositório de uma forma gráfica:</h3>
+            <div class="sizecode"> <code>$ git log --graph</code> </div>
+            Dica: Mostrará o hash, informações do autor, data do commit, título do commit e um gráfico vertical de commits.
+
+            <h3 class="gradient-text">Mostrar todo o histórico de commits do repositório de todas as branches, de uma forma gráfica e resumida:</h3>
+            <div class="sizecode"> <code>$ git log --oneline --graph --all</code> </div>
+            Dica: Mostrará apenas o hash do commit, a mensagem do commit e um gráfico vertical de commits.
+            
+            <h3 class="gradient-text">Ferramenta de visualização do git:</h3>
+            <div class="sizecode"> <code>$ gitk</code> </div>
+            Dica: Para sistemas Windows, pré instalado junto com o gitbash. <br>
+            Para sistemas Unix, recomendo baixar o GitKraken (<a href="https://git-scm.com/download/gui/linux" target="_blank">https://git-scm.com/download/gui/linux</a>).
+        </div>
+
+        <div class="title" id="branches">
+            <h1><b>BRANCHES</b></h1>
+        </div>
+        <div class="jumbotron">
+            <h3 class="gradient-text">Mostrar as branches do repositório local:</h3>
+            <div class="sizecode"> <code>$ git branch</code> </div>
+            Dica: A branch com * (asterisco) é a qual você está localizado.
+
+            <h3 class="gradient-text">Mostrar as branches do repositório remotos:</h3>
+            <div class="sizecode"> <code>$ git branch -r</code> </div>
+
+            <h3 class="gradient-text">Mostra as branches do repositório local/remotos:</h3>
+            <div class="sizecode"> <code>$ git branch -a</code> </div>
+            
+            <h3 class="gradient-text">Para se movimentar entre as branches:</h3>
+            <div class="sizecode"> <code>$ git checkout &ltbranch&gt</code> </div>
+            Dica: No lugar da &ltbranch&gt colocar a branch desejada.
+
+            <h3 class="gradient-text">Para se movimentar entre as branches e criar uma nova branch:</h3>
+            <div class="sizecode"> <code>$ git checkout -b &ltnova-branch&gt</code> </div>
+
+            <h3 class="gradient-text">Renomeia o nome da branch:</h3>
+            <div class="sizecode"> <code>$ git branch -m &ltnova-branch&gt</code> </div>
+            Dica: Tem que estar localizado na branch que quer renomear.
+
+            <h3 class="gradient-text">Deletar uma branch:</h3>
+            <div class="sizecode"> <code>$ git branch -d</code> </div>
+
         </div>
 
     </div>

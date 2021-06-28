@@ -84,6 +84,10 @@ h1{
   color: black
 }
 
+a{
+  color: rgb(121, 132, 196);
+}
+
 .gradient-text{
   background: linear-gradient(to right, #4f26c0, #c967bc); 
   -webkit-background-clip: text;
